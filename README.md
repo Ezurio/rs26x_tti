@@ -9,14 +9,16 @@ This is the release page for the Ezurio [RS26x][RS26x product brief] product fam
 
 # Contents
 
-This repository includes the following files.
+Repository Releases include the following files.
 
-| File Name                                                  | Description                                      |
-|------------------------------------------------------------|--------------------------------------------------|
-| [Downlink_TTI.js](Downlink_TTI.js)                         | Downlink Encoder with commented JavaScript code. |
-| [Downlink_TTI_Uncommented.js](Downlink_TTI_Uncommented.js) | Downlink Encoder with comments removed.          |
-| [Uplink_TTI.js](Uplink_TTI.js)                             | Uplink Decoder with commented JavaScript code.   |
-| [Uplink_TTI_Uncommented.js](Uplink_TTI_Uncommented.js)     | Uplink Decoder with comments removed.            |
+| File Name                                  | Description                                                   |
+|--------------------------------------------|---------------------------------------------------------------|
+| RS26x_TTI_Device_Repository.js             | TTI Device Repository content with commented Javascript code. |
+| RS26x_TTI_Device_Repository_Uncommented.js | TTI Device Repository content with comments removed.          |
+| RS26x_TTI_Downlink.js                      | Downlink Encoder with commented JavaScript code.              |
+| RS26x_TTI_Downlink_Uncommented.js          | Downlink Encoder with comments removed.                       |
+| RS26x_TTI_Uplink.js                        | Uplink Decoder with commented JavaScript code.                |
+| RS26x_TTI_Uplink_Uncommented.js            | Uplink Decoder with comments removed.                         |
 
 Uncommented files are intended for integration within TTI. Commented versions are provided for developer reference. A character count limitation enforced by TTI results in file size needing to be minimized, with comments being included in the character count.
 
@@ -39,6 +41,8 @@ Once the code has been pasted into the 'Formatter code' pane, towards the foot o
 ![Saving changes](images/002_saving_changes.png)
 
 The steps described above must be repeated for each codec type being installed.
+
+Note the above steps are intended for adding codec support on a discrete basis. [TTI Device Repository][TTI Device Repository] support is also available for the RS26x, where codec support for the device is enabled during [addition of the device][Adding Devices].
 
 # Viewing decoded uplink data
 
@@ -68,3 +72,5 @@ The queued downlink is sent to the device on the next available receive window f
 
 [RS26x product brief]: <https://www.ezurio.com/documentation/product-brief-rs26x-sensor>
 [RS26x LoRa Protocol]: <https://www.ezurio.com/documentation/application-note-lora-protocol-rs26x-series>
+[TTI Device Repository]: <https://github.com/TheThingsNetwork/lorawan-devices>
+[Adding Devices]: <https://www.thethingsindustries.com/docs/hardware/devices/adding-devices/>
